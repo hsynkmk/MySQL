@@ -1,0 +1,13 @@
+DELIMITER $$
+
+CREATE EVENT yearly_delete_stale_audit_rows
+ON SCHEDULE
+	-- AT '2023-01-30'
+    EVERY 1 YEAR STARTS '2023-01-30' ENDS '2025-01-30'
+DO BEGIN
+	DELETE FROM payments_audit
+    WHERE action_date < NOW() - INTERVAL 1 YEAR;
+    -- DATESUB(NOW, INTERVAL 1 YEAR)
+END$$
+
+DELIMITER ;
