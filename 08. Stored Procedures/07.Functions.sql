@@ -1,7 +1,10 @@
-CREATE DEFINER=`root`@`localhost` FUNCTION `get_risk_factor_for_client`(
-	client_id INT
-) RETURNS int
-    READS SQL DATA
+USE sql_invoicing;
+
+DELIMITER $$
+
+CREATE  FUNCTION get_risk_factor_for_client(client_id INT)
+RETURNS INTEGER
+READS SQL DATA
 BEGIN
 	DECLARE risk_factor DECIMAL(9, 2) DEFAULT 0;
 	DECLARE invoices_total DECIMAL(9, 2);
@@ -14,4 +17,7 @@ BEGIN
     
     SET risk_factor = invoices_total / invoices_count;
 	RETURN risk_factor;
-END
+    
+END$$
+
+DELIMITER ;

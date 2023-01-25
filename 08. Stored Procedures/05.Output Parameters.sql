@@ -1,4 +1,4 @@
-USE sql_invoices;
+USE sql_invoicing;
 
 DELIMITER $$
 

@@ -8,3 +8,6 @@ END$$
 DELIMITER ;
 
 CALL get_clients();
+
+-- DROPPING
+-- DROP PROCEDURE IF EXISTS get_clients

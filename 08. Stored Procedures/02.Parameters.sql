@@ -1,3 +1,5 @@
+USE sql_invoicing;
+
 DROP PROCEDURE IF EXISTS get_clients_by_state;
 
 DELIMITER $$
