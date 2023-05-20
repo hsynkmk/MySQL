@@ -49,5 +49,59 @@ MySQL is a open-source relational database management system an it was first rel
 - 07.Using Subqueries in Updates.sql
 - 08.Deleting Rows.sql
 
+[04. Summarizing Data](04.%20Summarizing%20Data)
 
+01.Aggregate Functions.sql
+02.GROUP BY Clause.sql
+03.HAVING Clause.sql
+04.ROLLUP Operator.sql
 
+[05. Writing Complex Query](05.%20Writing%20Complex%20Query)
+
+01.Subqueries.sql
+02.IN Operator.sql
+03.ALL Keyword.sql
+04.ANY Keyword.sql
+05.Correlated Subqueries.sql
+06.EXISTS Operator.sql
+
+[06. Essential MySQL Functions](06.%20Essential%20MySQL%20Functions)
+
+01.Numeric Functions.sql
+02.String Functions.sql
+03.Date Functions.sql
+04.Formatting Dates and Times.sql
+05.Calculating Dates and Times.sql
+06.IFNULL and COALESCE Functions.sql
+07.IF Function.sql
+08.CASE Operator.sql
+
+[07. Views](07.%20Views)
+
+01.Creating Views.sql
+02.Updatable Views.sql
+
+[08. Stored Procedures](08.%20Stored%20Procedures)
+
+01.Creating a Stored Procedures.sql
+02.Parameters.sql
+03.Parameters with Default Value.sql
+04.Parameter Validation.sql
+05.Output Parameters.sql
+06.Variables.sql
+07.Functions.sql
+
+[09. Triggers and Events](09.%20Triggers%20and%20Events)
+
+01.Triggers.sql
+02.Viewing and Dropping Triggers.sql
+03.Using Triggers for Auditing.sql
+04.Events.sql
+05.Viewing, Dropping and Altering Events.sql
+
+[10. Indexing](10.%20Indexing)
+
+01.Creating Indexes.sql
+02.Prefix Indexes.sql
+03.FullText Indexes.sql
+04.Composite Indexes.sql
