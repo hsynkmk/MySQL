@@ -1,5 +1,4 @@
 # MySQL-Notes
-I created these notes while learning MySQL
 
 ---
 ## What is MySQL
