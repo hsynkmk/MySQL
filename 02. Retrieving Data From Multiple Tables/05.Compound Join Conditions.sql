@@ -1,5 +1,6 @@
 USE sql_store;
 
+-- When joining multiple tables, you can specify multiple conditions (order_items does not have a unique identifier)
 SELECT *
 FROM order_items oi
 JOIN order_item_notes oin

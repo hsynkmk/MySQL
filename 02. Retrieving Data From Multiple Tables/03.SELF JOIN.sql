@@ -1,5 +1,6 @@
 USE sql_hr;
 
+-- SELF JOIN is a regular join, but the table is joined with itself.
 SELECT
 	e.employee_id,
 	e.first_name AS EmployeeName,

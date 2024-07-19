@@ -1,5 +1,6 @@
 use sql_store;
 
+-- IN operator is used to specify multiple values in a WHERE clause
 SELECT *
 FROM Customers
 WHERE state IN ('VA', 'FL', 'GA');

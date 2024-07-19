@@ -17,7 +17,7 @@ SELECT
 	last_name,
     points,
     points + 10,
-    points + 20 AS plus_20,
+    points + 20 AS plus_20,  -- Alias column name
 	points + 30 AS "plus 20" -- If we want to add a space, we need to use double quotes
 FROM customers;
 

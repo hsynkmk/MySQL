@@ -1,5 +1,6 @@
 use sql_store;
 
+-- LIMIT is used for record count
 SELECT *
 FROM customers
 LIMIT 3;

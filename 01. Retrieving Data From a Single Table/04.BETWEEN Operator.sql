@@ -1,5 +1,6 @@
 use sql_store;
 
+-- BETWEEN operator is used to filter the result set within a certain range
 SELECT *
 FROM customers
 WHERE points BETWEEN 1000 AND 3000;

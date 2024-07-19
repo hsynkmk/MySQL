@@ -1,5 +1,6 @@
 USE sql_store;
 
+-- JOINing multiple tables
 SELECT
 	o.order_id,
     o.order_date,

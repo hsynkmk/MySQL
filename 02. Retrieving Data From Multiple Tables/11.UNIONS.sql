@@ -1,5 +1,6 @@
 USE sql_store;
 
+-- UNION
 /*
 The UNION operator is used to combine the result-set of two or more SELECT statements.
 Every SELECT statement within UNION must have the same number of columns
@@ -12,4 +13,3 @@ FROM customers
 UNION
 SELECT name
 FROM shippers
-

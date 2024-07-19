@@ -1,5 +1,6 @@
 use sql_store;
 
+-- REGEXP operator is used to filter the result set based on pattern matching
 SELECT *
 FROM customers
 -- WHERE last_name REGEXP 'field'			-- Same as WHERE last_name LIKE '%field%'
