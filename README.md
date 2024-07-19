@@ -11,17 +11,81 @@ MySQL is a open-source relational database management system an it was first rel
 ---
 
 ## Contents
-[01. Retrieving Data From a Single Table](01.%20Retrieving%20Data%20From%20a%20Single%20Table)
+<details>
+  <summary>01. Retrieving Data From a Single Table</summary>
+  
+ - 01.SELECT Clause.sql
+  ```bash
+USE sql_store;
 
-- 01.SELECT Clause.sql
+-- Select all data
+SELECT *
+FROM customers;
+
+-- Select all data order by first_name
+SELECT *
+FROM customers
+ORDER BY first_name;
+
+-- Select specific colums
+SELECT
+	first_name,
+	last_name,
+    points,
+    points + 10,
+    points + 20 AS plus_20,  -- Alias column name
+	points + 30 AS "plus 20" -- If we want to add a space, we need to use double quotes
+FROM customers;
+
+-- Select unique list of selected column
+SELECT DISTINCT state
+FROM customers;
+  ```
+
 - 02.Where Clause (with AND, OR, NOT).sql
+  ```bash
+use sql_store;
+
+  -- Where clause is a kind of condition clause. We can use >, >=, <, <=, =, !=, <>, AND, OR, NOT
+  SELECT * 
+  FROM Customers
+  -- WHERE points > 3000;
+  -- WHERE state != 'VA';
+  -- WHERE birth_date > '1990-01-01' OR (points > 1000 AND state != 'VA');
+  WHERE NOT birth_date > '1990-01-01' AND (points > 1000 AND state != 'VA');
+  ```
+
 - 03.IN Operator.sql
+  ```bash
+
+  ```
+
 - 04.BETWEEN Operator.sql
+  ```bash
+
+  ```
 - 05.LIKE Operator.sql
+  ```bash
+
+  ```
 - 06.REGEXP Operator.sql
+  ```bash
+
+  ```
 - 07.IS NULL Operator.sql
+  ```bash
+
+  ```
 - 08.ORDER BY Clause.sql
+  ```bash
+
+  ```
 - 09.LIMIT Clause.sql
+  ```bash
+
+  ```
+</details>
+
 
 [02. Retrieving Data From Multiple Tables](02.%20Retrieving%20Data%20From%20Multiple%20Tables)
 
