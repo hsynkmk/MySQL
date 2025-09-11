@@ -23,3 +23,5 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+-- Note: Parameter validation ensures input values meet specific criteria before processing.

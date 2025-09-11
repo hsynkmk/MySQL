@@ -11,3 +11,5 @@ DO BEGIN
 END$$
 
 DELIMITER ;
+
+-- Note: Events are scheduled tasks that run automatically at specified intervals.

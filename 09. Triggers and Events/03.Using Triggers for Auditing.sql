@@ -1,5 +1,7 @@
 USE sql_invoicing;
 
+-- Using Triggers for Auditing
+-- 1. Define a trigger to audit payment inserts
 DELIMITER $$
 DROP TRIGGER IF EXISTS payment_after_insert;
 CREATE TRIGGER payment_after_insert
@@ -17,6 +19,7 @@ END$$
 DELIMITER ;
 
 
+-- 2. Define a trigger to audit payment deletions
 DELIMITER $$
 DROP TRIGGER IF EXISTS payment_after_delete;
 CREATE TRIGGER payment_after_delete
@@ -34,8 +37,11 @@ END$$
 DELIMITER ;
 
 
+-- 3. Insert and delete payments to trigger audits
 INSERT INTO payments
 VALUES (DEFAULT, 5, 3, '2019-01-01', 10, 1);
 
 DELETE FROM payments
 WHERE payment_id = 11;
+
+-- Note: Triggers can be used for auditing changes to data.

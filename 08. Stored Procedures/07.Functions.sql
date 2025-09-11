@@ -1,8 +1,9 @@
 USE sql_invoicing;
 
+-- Creating a Function
+-- 1. Define a function to calculate risk factor for a client
 DELIMITER $$
-
-CREATE  FUNCTION get_risk_factor_for_client(client_id INT)
+CREATE FUNCTION get_risk_factor_for_client(client_id INT)
 RETURNS INTEGER
 READS SQL DATA
 BEGIN
@@ -19,5 +20,6 @@ BEGIN
 	RETURN risk_factor;
     
 END$$
-
 DELIMITER ;
+
+-- Note: Functions return a single value and can be used in SQL expressions.

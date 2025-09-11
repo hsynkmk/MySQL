@@ -1,15 +1,23 @@
-SELECT UPPER('aBcd');
-SELECT LOWER('ABcD');
+-- String Functions
+-- 1. UPPER and LOWER: Convert string to uppercase or lowercase
+SELECT UPPER('aBcd');  -- Result: 'ABCD'
+SELECT LOWER('ABcD');  -- Result: 'abcd'
 
-SELECT LTRIM('  ABCD');
-SELECT RTRIM('ABCD  ');
-SELECT TRIM(' ABCD  ');
+-- 2. LTRIM, RTRIM, and TRIM: Remove spaces from strings
+SELECT LTRIM('  ABCD');  -- Result: 'ABCD'
+SELECT RTRIM('ABCD  ');  -- Result: 'ABCD'
+SELECT TRIM(' ABCD  ');  -- Result: 'ABCD'
 
-SELECT LEFT('ABCD', 2);
-SELECT RIGHT('ABCD', 3);
+-- 3. LEFT and RIGHT: Extract characters from the left or right
+SELECT LEFT('ABCD', 2);  -- Result: 'AB'
+SELECT RIGHT('ABCD', 3);  -- Result: 'BCD'
 
-SELECT SUBSTRING('ABCDEF', 2, 2);
-SELECT SUBSTRING('ABCDEF', 2);
+-- 4. SUBSTRING: Extract a substring from a string
+SELECT SUBSTRING('ABCDEF', 2, 2);  -- Result: 'BC'
+SELECT SUBSTRING('ABCDEF', 2);  -- Result: 'BCDEF'
 
-SELECT LOCATE('c', 'ABCDEF');
-SELECT REPLACE('ABCDEF', 'CD', 'Z');
+-- 5. LOCATE: Find the position of a substring
+SELECT LOCATE('C', 'ABCDEF');  -- Result: 3
+
+-- 6. REPLACE: Replace occurrences of a substring
+SELECT REPLACE('ABCDEF', 'CD', 'Z');  -- Result: 'ABZEF'

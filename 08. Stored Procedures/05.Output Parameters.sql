@@ -1,7 +1,9 @@
+-- Using the sql_invoicing database
 USE sql_invoicing;
 
+-- Creating a Stored Procedure with Output Parameters
+-- 1. Define a procedure to get unpaid invoices for a client
 DELIMITER $$
-
 CREATE PROCEDURE get_unpaid_invoices_for_client
 (
 	client_id INT,
@@ -18,3 +20,5 @@ BEGIN
 END$$
 
 DELIMITER ;
+
+-- Note: Output parameters allow stored procedures to return multiple values.

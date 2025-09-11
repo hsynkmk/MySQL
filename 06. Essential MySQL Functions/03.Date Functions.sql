@@ -1,11 +1,16 @@
-SELECT NOW(), CURDATE(), CURTIME();
+-- Date Functions
+-- 1. Current date and time
+SELECT NOW(), CURDATE(), CURTIME();  -- NOW: current date and time, CURDATE: current date, CURTIME: current time
 
-SELECT YEAR(NOW());
-SELECT MONTH(NOW());
-SELECT HOUR(NOW());
-SELECT SECOND(NOW());
+-- 2. Extract components from date
+SELECT YEAR(NOW());  -- Result: current year
+SELECT MONTH(NOW());  -- Result: current month
+SELECT HOUR(NOW());  -- Result: current hour
+SELECT SECOND(NOW());  -- Result: current second
 
-SELECT DAYNAME(NOW());
-SELECT MONTHNAME(NOW());
+-- 3. Get day and month names
+SELECT DAYNAME(NOW());  -- Result: name of the current day
+SELECT MONTHNAME(NOW());  -- Result: name of the current month
 
-SELECT EXTRACT(DAY FROM NOW());
+-- 4. Extract specific part of date
+SELECT EXTRACT(DAY FROM NOW());  -- Result: current day of the month
